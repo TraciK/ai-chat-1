@@ -11,3 +11,9 @@ c.user("Hello! What are the best spots for pizza in Chicago?")
 ai_reply = c.generate!
 
 pp ai_reply
+
+ap ai_reply
+
+ap c
+
+ap c.messages
