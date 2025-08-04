@@ -1,32 +1,18 @@
-require "bundler/setup"
-require "ai-chat"
-require "dotenv/load"
-
-
-
-c = AI::Chat.new
-
-c.system("You are a helpful assistant who talks like Shakespeare.")
-
-c.user("Hello! What are the best spots for pizza in Chicago?")
-
-ai_reply = c.generate!
-
-pp ai_reply
-
-ap ai_reply
-
-ap c
-
-ap c.messages
-
-while user_input != "bye"
-  puts "Hello, how can I help you today?"
-  puts "-" * 50
-  user_input = gets.chomp
-
-  if user_input == "bye"
-    puts "Goodbye! Have a great day!"
-    break
+ai-chat-1 main % ruby chat.rb
+chat.rb: --> chat.rb
+Unmatched keyword, missing `end' ?
+   1  require "bundler/setup"
+   2  require "ai-chat"
+   3  require "dotenv/load"
+   7  c = AI::Chat.new
+   9  c.system("You are a helpful assistant who talks like Shakespeare.")
+  11  c.user("Hello! What are the best spots for pizza in Chicago?")
+  13  ai_reply = c.generate!
+  15  pp ai_reply
+  17  ap ai_reply
+  19  ap c
+  21  ap c.messages
+> 23  while user_input != "bye"
+chat.rb:31: syntax error, unexpected end-of-input (SyntaxError)
   end
-end
+     ^
